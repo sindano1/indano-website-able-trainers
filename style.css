@@ -1,3 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+/*Montserrat semi bold
+font-family: 'Montserrat', sans-serif;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=PT+Serif&display=swap');
+/*pt serif
+font-family: 'PT Serif', serif;*/
+
+html, body {
+    height: 100%;
+    min-height: 100%;
+}
+
 body {
-    background: blue;
+    background: #F9F9FD;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 600;
+    font-size: 100%;
+}
+
+#welcomeLogo {
+    padding: 20px;
+    background: rbga(78,53,148,.85);
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 600;
+    color: #4b4b49;
+    margin: auto;
+    text-align: center;
+}
+
+.businessDescription {
+    font-family: 'PT Serif', serif;
+    color: #4b4b49;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.servicesOffered {
+    max-width: 70%;
+    width: 70%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    color: #4b4b49;
+
+}
+
+table {
+    background-color: #4e3594;
+    color: #F9F9FD;
+    font-family: 'PT Serif', serif;
+    text-align: center;
+    padding: 10px;
+    table-layout: auto;
+    width: auto;
+
 }
