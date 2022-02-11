@@ -5,11 +5,20 @@
     <title>My Personal Website</title>
   </head>
   <body>
+
     
     <div id="welcomeLogo">
+      
       <img src="./Able Trainers Style/Color/able-trainers-color-large-01.png" alt="Pink and purple GSD runs on the words Able Trainers" title="So everybody can train!"/>
       <!--navigation bar?-->
-      <h1>Start training with Able Trainers</h1>
+      <nav id="navigationBar">
+        <a href="#getStarted">Start Training</a>
+        <a href="#servicesOffered">Services Offered</a>
+        <a href="#aboutUs">About Us</a>
+        <a href="#contactUs">Contact Us</a>
+      </nav>
+
+      <h1><p id="getStarted">Start training with Able Trainers</p></h1>
       <div class="businessDescription">
         <!--limit width of font here, maybe see through pink or purple background-->
         <p>Able Trainers is a pet dog training company that focuses on accessibility in dog training for people with disabilities. Our training is least intrusive, minimally aversive, reward based, and based in the science of positive reinforcement dog training.</p>
@@ -19,14 +28,13 @@
       </div>
     </div>
     
+    
   
     <div class="servicesOffered">
       <img src="Dog Photos/Copy of DSC_0611.jpg" alt="German Shepherd standing in profile"/>
-      <h1>What we offer</h1>
-      <p>services description with link to packages</p>
-      <!--consultation, see our packages-->
+      <h1><p id="servicesOffered">What we offer</p></h1>
       <h2>Private Training</h2>
-      <table>
+      <table id=trainingTable>
         <!--even out columns-->
         <tr>
           <th>In Person</th>
@@ -42,7 +50,7 @@
       </table>
 
       <h2>Training Walks</h2>
-      <table>
+      <table id=walksTable>
         <tr>
           <th>Individual</th>
           <th>Group</th>
@@ -54,9 +62,83 @@
       </table>
     </div>
 
+      <!-- add space, css for button visuals-->
+    <div class="prices">
+      <div>
+        <button onclick="priceButton()">Package Prices</button>
+        <div id="packagePrices">
+      <table id="priceTable">
+        <tr>
+          <th>Package</th>
+          <th>What you get</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>Consultation</td>
+          <td>A 60 minute phone or video call to discuss your dog, your goals, and your
+            expectations. A consultation can help us narrow down what sort of training may
+            be the most beneficial to your dog and also provides Able Trainers with all of the
+            details we need to give you the most bang for your buck. Able Trainers may
+            require a consultation dependent on individual situations.
+            Training walk consultations are in person; they cover the basics as well as an
+            assessment of your dog’s leash skills and training history.</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+          <td>Single Lesson</td>
+          <td>Single serve training lessons to suit your needs.
+            A consultation is required for single lessons so
+            that Able Trainers can effectively and efficiently
+            work towards your goals. Single lessons must be
+            scheduled at least 1 week in advance of the
+            lesson.</td>
+          <td>$100 per lesson</td>
+        </tr>
+        <tr>
+          <td>5 Lesson Package</td>
+          <td>
+            <ol>
+              <li>Client instruction: five 60-minute lessons
+            where Able Trainers can offer real-time
+            guidance and troubleshooting to your
+            custom training plan.</li>
+              <li>Trainer instruction: five 60-minute
+            lessons where Able Trainers works with
+            your dog towards you and your dog’s
+            goals.</li>
+            </ol>
+            Additional lessons can be added on to a
+            package for $95 per lesson.
+            5 lesson plans must be completed within 8
+            weeks of the first lesson.</td>
+          <td> $500 per package. Subsequent packages are $475 per package</td>
+        </tr>
+        <tr>
+          <td>4 Walk Package</td>
+          <td>Four 45-minute training walks within 15 minutes
+            driving distance of your house and a 15 minute
+            debrief after each walk. There will be at least 3
+            different locations for the walks within a 5 walk
+            package, unless otherwise agreed upon by Able
+            Trainers and the client.</td>
+          <td>$500 per package. Subsequent packages are $475</td>
+        </tr>
+        <tr>
+          <td>Group Classes and Walks</td>
+          <td>Group classes and walks will occasionally be offered at a centralized, public
+            location to clients for them to work on particular skills of that day. Group classes
+            will be limited to 5 dogs (space dependent) and clients will have access to real
+            time feed back and troubleshooting from Able Trainers.</td>
+          <td>$25 per class as offered</td>
+        </tr>
+      </table>
+        </div>
+      </div>
+    </div>
+
 
     <div>
-      <h1>Who are we?</h1>
+      <h1><p id="aboutUs">Who are we?</p></h1>
       <!--carousel pictures and descriptions, code found on https://www.w3schools.com/howto/howto_js_slideshow.asp-->
       <!-- Slideshow container -->
     <div class="slideshow-container">
@@ -103,12 +185,18 @@
         <span class="dot" onclick="currentSlide(1)"></span>
        <span class="dot" onclick="currentSlide(2)"></span>
        <span class="dot" onclick="currentSlide(3)"></span>
+       <span class="dot" onclick="currentSlide(4)"></span>
+       <span class="dot" onclick="currentSlide(5)"></span>
       </div>
     </div>
 
-    <div>
-      <p>contact us</p>
-      <!--email on top, beneath FB and Instagram. PINK! CCPDT logo-->
+    <div id=contactElement>
+      <p id="contactUs">Contact Us</p>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <a href="mailto:abletrainersllc@gmail.com" class="fa fa-google"></a>
+      <a href="https://www.facebook.com/abletrainers/" class="fa fa-facebook"></a>
+      <a href="https://www.instagram.com/abletrainers/" class="fa fa-instagram"></a>
+      <!--CCPDT logo-->
     </div>
 
 

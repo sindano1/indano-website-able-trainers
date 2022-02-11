@@ -1,9 +1,20 @@
 const h2 = document.createElement("h2");
-h2.textContent = "This content added by JavaScript";
 
 document.querySelector("body").appendChild(h2);
 
-//slideshow
+//click event to hide service packages
+function priceButton() {
+  const priceElement = document.getElementById("packagePrices");
+  if (priceElement.style.display === "none") {
+    priceElement.style.display = "block";
+  } else {
+    priceElement.style.display = "none";
+  }
+}
+
+//mouseover event to change images under getting started
+
+//slideshow - see html for where code was found
 var slideIndex = 1;
 showSlides(slideIndex);
 
